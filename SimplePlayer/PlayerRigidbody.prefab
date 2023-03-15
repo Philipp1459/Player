@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1043265789820401597}
   - component: {fileID: 1043265789820401598}
   m_Layer: 0
-  m_Name: player
+  m_Name: PlayerRigidbody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ Transform:
   m_Children:
   - {fileID: 1043265789225500870}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1043265789820401586
 MeshFilter:
@@ -240,6 +240,12 @@ MonoBehaviour:
   ground: 1
   min: -0.5
   max: 0.5
+  cr:
+    isCrouch: 0
+    crouch: 0.5
+    crouchMoveSpeed: 3
+    crouchLerpSpeed: 5
+  doubleJump: 0
   cam: {fileID: 1043265789225500870}
 --- !u!54 &1043265789820401598
 Rigidbody:
